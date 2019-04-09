@@ -1,5 +1,5 @@
 provider "google" {
-project = "infra-219701"
+project = "infra"
 region = "europe-west1"
 }
 resource "google_compute_instance" "app" {
@@ -10,7 +10,7 @@ tags = ["reddit-app"]
 # определение загрузочного диска
 boot_disk {
 initialize_params {
-image = "reddit-base-1539741478"
+image = ""
 }
 }
 # определение сетевого интерфейса
